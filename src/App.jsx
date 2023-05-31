@@ -39,7 +39,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const value = e.target.pokemonName.value
+    const value = e.target.pokemonName.value.toLowerCase().trim()
     if(value === '') return setPokemon(null)
     const URL = `https://pokeapi.co/api/v2/pokemon/${value}/`
     axios

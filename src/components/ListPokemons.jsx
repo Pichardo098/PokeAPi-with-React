@@ -11,7 +11,7 @@ const ListPokemons = ({pokemon}) => {
       .catch(err => console.log(err))
   }, [])
 
-  console.log(pokemonData);
+  
 
   return (
     <section className="min-h-min min-w-min bg-white m-2 rounded-xl grid justify-center text-center p-3 bg-gradient-to-b from-red-500 to-blue-700 hover:scale-105 duration-700 " >
